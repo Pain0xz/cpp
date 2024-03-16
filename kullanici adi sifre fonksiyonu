@@ -1,0 +1,50 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include<locale.h>
+#include <string.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+
+
+int sifre() {
+	char girsifre[500];
+	char sifre[] = "zonguldak67";
+	cout << "sifreyi giriniz\n--> ";
+	cin >> girsifre;
+	int dogrula2 = strcmp(girsifre, sifre);
+	return dogrula2;
+
+}
+
+
+int kullanici() {
+	char girkullanici[500];
+	char kullanici[] = "yusuf";
+	cout << "Kullanic adinizi giriniz \n--> ";
+    cin >> girkullanici;
+	int dogrula = strcmp(kullanici, girkullanici);
+	return dogrula;
+ }
+int main() {
+	bool kontrol = false;
+	while (kontrol == false) {
+	
+	int x = kullanici();
+	int y = sifre();
+	if (x == 0 && y == 0) {
+		system("cls");
+		cout << "giris basarili";
+		kontrol = true;
+	}
+	else {
+		system("cls");
+		cout << "kullanici adi yanlis veya sifre yanlis.";
+		Sleep(5000);
+		system("cls");
+	}
+	}
+	return 0;
+}
