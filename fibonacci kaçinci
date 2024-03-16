@@ -1,0 +1,28 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include<locale.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+
+
+int fibonacii(int a) {
+	if (a == 0||a == 1) {
+		return 1;
+	}
+	else {
+
+		return fibonacii(a - 1) + fibonacii(a - 2);
+	}
+ }
+int main() {
+	int a;
+	cout << "kacinci" << endl;
+	cin >> a;
+	cout << fibonacii(a);
+
+
+	return 0;
+}
