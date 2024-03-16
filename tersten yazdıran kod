@@ -1,0 +1,17 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include<locale.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	char gir[500];
+	cin >> gir;
+	strrev(gir);
+	printf(gir);
+
+
+	return 0;
+}
