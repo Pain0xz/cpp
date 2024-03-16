@@ -1,0 +1,27 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include<locale.h>
+#include <string.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+
+
+string bak() {
+	char gir[500];
+	char hedef[500];
+	cout << "gir bakalim" << endl;
+	scanf("%[^\n]", &gir); // bosluktan sonrasını okumasını saglar
+    
+	string kopya = strcpy(hedef, gir);
+	return kopya;
+ }
+int main() {
+	
+	string x = bak();
+	cout << x << " basaryila kopyalandi.";
+
+	return 0;
+}
