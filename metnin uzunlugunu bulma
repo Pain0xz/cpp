@@ -1,0 +1,28 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include<locale.h>
+#include <string.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+
+
+int bak() {
+	char gir[500];
+	cout << "gir bakalim" << endl;
+	scanf("%[^\n]", &gir); // bosluktan sonrasını okumasını saglar
+
+	int uzunluk = strlen(gir);
+	cout << "*" << gir << "*" << " kelimesi ";
+
+	return uzunluk;
+ }
+int main() {
+	
+	int x = bak();
+	cout << x << " karakter uzunlugundadir.";
+
+	return 0;
+}
