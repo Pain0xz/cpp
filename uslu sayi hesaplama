@@ -1,0 +1,21 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+#include <math.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+int main() {
+	float taban, us;
+	cout << "tabani gir\n--> ";
+	cin >> taban;
+	cout << "ussu gir \n--> ";
+	cin >> us;
+	double x = pow(taban, us);
+	cout << x;
+
+	return 0;
+}
