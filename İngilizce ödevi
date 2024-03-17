@@ -1,0 +1,106 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+#include <math.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+
+
+
+void soup() {
+	bool kontrol = false;
+	int secim;
+	while (kontrol == false) {
+		cout << "Step 1- Open the packaging\n";
+		Sleep(4000);
+		cout << "Step 2- Add water as it wrote on the packaging.\n";
+		Sleep(4000);
+		cout << "Step 3- Stir the ready soup in the low heated water until it boils.\n";
+		Sleep(4000);
+		cout << "Step 4- After it boils stir it extra 3 minutes.\n";
+		Sleep(5000);
+		cout << "Step 5- Its all done.\n\n";
+		Sleep(3000);
+		cout << "If you want to repeat the recipe Press 1\n If you want to finish the recipe press any button.\n--> ";
+		cin >> secim;
+		if (secim == 1) {
+			cout << "REPEATING THE RECIPE.";
+			Sleep(2000);
+			system("cls");
+
+		}
+		else { kontrol = true;
+		}
+       
+	}
+}
+
+void pasta() {
+	bool kontrol = false;
+	int secim;
+	while (kontrol == false) {
+	cout << "Step 1-Start with a very large pot of water, about 6 quarts per pound of pasta. Bring it to a boil."<< endl;
+	Sleep(10000);
+	cout << "Step 2-Put in a lot of salt, about 3 tablespoons.\n";
+	Sleep(5000);
+	cout << "Step 3-Drop in the pasta while the water is at a boil and give it a gentle stir.\n";
+	Sleep(7000);
+	cout << "Step 4-Stir it occasionally while it cooks. Use the cooking time on the pasta package as a guide.\n";
+	Sleep(7000);
+	cout << "Step 5-Sample the pasta at about 2 minutes shy of the indicated time. It should be al dente. You'll finish cooking it in the sauce.\n";
+	Sleep(7000);
+	cout << "Step 6-Drain the pasta. Just be sure to save about 1 cup of the pasta water. If you have a pot with a colander insert, use it to drain the pasta. If not, drain the \npasta in a colander set in the sink.\n";
+	Sleep(7000);
+	cout << "Step 7-Add the pasta to your sauce and finish cooking it in the sauce. Give it a stir to coat.\n";
+	Sleep(7000);
+	cout << "Step 8-And serve it as you want.Buon appetito(Afiyet Olsun) \n\n";
+	cout << "If you want to repeat the recipe Press 1\n If you want to finish the recipe press any button.\n--> ";
+	cin >> secim;
+	if (secim == 1) {
+		cout << "REPEATING THE RECIPE.";
+		Sleep(2000);
+		system("cls");
+
+	}
+	else {
+		kontrol = true;
+	}
+
+	}
+}
+
+int main() {
+	int secim;
+	bool kontrol = false;
+	while (kontrol == false) {
+		system("cls");
+		cout << "Welcome to recipes Please choose one.\n1- Pasta\n2- Soup\n--> ";
+		cin >> secim;
+
+		switch (secim) {
+		case 1:
+			system("cls");
+			pasta();
+			break;
+		case 2:
+			system("cls");
+			soup();
+			break;
+		default:    for (int i = 0; i < 3; i++) {
+					system("cls");
+					cout << "Please choose number 1 or 2.";
+					Sleep(2000);
+					system("cls");
+					Sleep(300);
+					} break;
+
+		}
+	}
+
+
+	return 0;
+}
