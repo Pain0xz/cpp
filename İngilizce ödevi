@@ -107,7 +107,7 @@ int main() {
 	bool kontrol = false;
 	while (kontrol == false) {
 		system("cls");
-		cout << "Welcome to recipes Please choose one.\n1- Pasta\n2- Soup\n3- Menemen\n--> ";
+		cout << "WARNING !!! Obbey the rules or youll see what happens >:)\nWelcome to recipes Please choose one.\n1- Pasta\n2- Ready Soup\n3- Menemen\n--> ";
 		cin >> secim;
 		if (secim == "1") {
 			system("cls");
