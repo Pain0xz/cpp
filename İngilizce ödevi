@@ -10,7 +10,7 @@ using namespace std;
 
 void menemen() {
 	bool kontrol = false;
-	int secim;
+	string secim;
 	while (kontrol == false) {
 		cout << "Step 1- Put the olive oil and the peppers to the pan and cook them until their color turns\n";
 		Sleep(5000);
@@ -26,7 +26,7 @@ void menemen() {
 		Sleep(2000);
 		cout << "If you want to repeat the recipe Press 1\nIf you want to finish the recipe press any button.\n--> ";
 		cin >> secim;
-		if (secim == 1) {
+		if (secim == "1") {
 			cout << "REPEATING THE RECIPE.";
 			Sleep(2000);
 			system("cls");
@@ -134,6 +134,3 @@ int main() {
 	}
 	return 0;
 }
-
-	
-	
