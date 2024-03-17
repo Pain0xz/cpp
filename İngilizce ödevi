@@ -8,7 +8,36 @@
 #pragma warning (disable:4996)
 using namespace std;
 
+void menemen() {
+	bool kontrol = false;
+	int secim;
+	while (kontrol == false) {
+		cout << "Step 1- Put the olive oil and the peppers to the pan and cook them until their color turns\n";
+		Sleep(5000);
+		cout << "Step 2- Add peeled and chopped tomatos\n";
+		Sleep(5000);
+		cout << "Step 3- Close the lid of the pan and wait for the tomatoes to cook.\n";
+		Sleep(5000);
+		cout << "Step 4- Add boiling water and brake egg into it.\n";
+		Sleep(5000);
+		cout << "Step 5- Add salt and spices ,wait for it to cook\n";
+		Sleep(5000);
+		cout << "FINAL Step- Enjoy your meal\n\n";
+		Sleep(2000);
+		cout << "If you want to repeat the recipe Press 1\nIf you want to finish the recipe press any button.\n--> ";
+		cin >> secim;
+		if (secim == 1) {
+			cout << "REPEATING THE RECIPE.";
+			Sleep(2000);
+			system("cls");
 
+		}
+		else {
+			kontrol = true;
+		}
+
+	}
+}
 
 void soup() {
 	bool kontrol = false;
@@ -32,9 +61,10 @@ void soup() {
 			system("cls");
 
 		}
-		else{ kontrol = true;
+		else {
+			kontrol = true;
 		}
-       
+
 	}
 }
 
@@ -42,32 +72,32 @@ void pasta() {
 	bool kontrol = false;
 	string secim;
 	while (kontrol == false) {
-	cout << "Step 1- Start with a very large pot of water, about 6 quarts per pound of pasta. Bring it to a boil."<< endl;
-	Sleep(10000);
-	cout << "Step 2- Put in a lot of salt, about 3 tablespoons.\n";
-	Sleep(5000);
-	cout << "Step 3- Drop in the pasta while the water is at a boil and give it a gentle stir.\n";
-	Sleep(7000);
-	cout << "Step 4- Stir it occasionally while it cooks. Use the cooking time on the pasta package as a guide.\n";
-	Sleep(7000);
-	cout << "Step 5- Sample the pasta at about 2 minutes shy of the indicated time. It should be al dente. You'll finish cooking it in the sauce.\n";
-	Sleep(7000);
-	cout << "Step 6- Drain the pasta. Just be sure to save about 1 cup of the pasta water. If you have a pot with a colander insert, use it to drain the pasta. If not, drain the \npasta in a colander set in the sink.\n";
-	Sleep(7000);
-	cout << "Step 7- Add the pasta to your sauce and finish cooking it in the sauce. Give it a stir to coat.\n";
-	Sleep(7000);
-	cout << "Step 8- And serve it as you want.Buon appetito(Afiyet Olsun) \n\n";
-	cout << "If you want to repeat the recipe Press 1\nIf you want to finish the recipe press any button.\n--> ";
-	cin >> secim;
-	if (secim == "1") {
-		cout << "REPEATING THE RECIPE.";
-		Sleep(2000);
-		system("cls");
+		cout << "Step 1- Start with a very large pot of water, about 6 quarts per pound of pasta. Bring it to a boil." << endl;
+		Sleep(10000);
+		cout << "Step 2- Put in a lot of salt, about 3 tablespoons.\n";
+		Sleep(5000);
+		cout << "Step 3- Drop in the pasta while the water is at a boil and give it a gentle stir.\n";
+		Sleep(7000);
+		cout << "Step 4- Stir it with patience while it cooks.\n";
+		Sleep(7000);
+		cout << "Step 5- You'll finish cooking it in the sauce.\n";
+		Sleep(7000);
+		cout << "Step 6- Drain the pasta. Just be sure to save about 1 cup of the pasta water. If you have  colander, drain the pasta in a colander set in the sink.\n";
+		Sleep(7000);
+		cout << "Step 7- Add the pasta to your sauce and finish cooking it in the sauce. Give it a stir to coat.\n";
+		Sleep(7000);
+		cout << "Step 8- And serve it as you want.Buon appetito(Afiyet Olsun) \n\n";
+		cout << "If you want to repeat the recipe Press 1\nIf you want to finish the recipe press any button.\n--> ";
+		cin >> secim;
+		if (secim == "1") {
+			cout << "REPEATING THE RECIPE.";
+			Sleep(2000);
+			system("cls");
 
-	}
-	else {
-		kontrol = true;
-	}
+		}
+		else {
+			kontrol = true;
+		}
 
 	}
 }
@@ -77,7 +107,7 @@ int main() {
 	bool kontrol = false;
 	while (kontrol == false) {
 		system("cls");
-		cout << "Welcome to recipes Please choose one.\n1- Pasta\n2- Soup\n--> ";
+		cout << "Welcome to recipes Please choose one.\n1- Pasta\n2- Soup\n3- Menemen\n--> ";
 		cin >> secim;
 		if (secim == "1") {
 			system("cls");
@@ -87,16 +117,23 @@ int main() {
 			system("cls");
 			soup();
 		}
-		else {
-			for (int i = 0; i < 3; i++) {
-				system("cls");
-				cout << "Please choose number 1 or 2.";
-				Sleep(2000);
-				system("cls");
-				Sleep(300);
-			}
-		}   
-
+		else if (secim == "3") {
+			system("cls");
+			menemen();
 		}
-	return 0;
+		else {
+			for (int i = 0; i <= 100; i++){
+				cout << "Hack Loading %" << i << endl;
+				Sleep(50);
+			}
+			for (int i = 1; i > 0; i++) {
+				cout << i << " ";
+			}
+		}
+		
 	}
+	return 0;
+}
+
+	
+	
