@@ -1,0 +1,43 @@
+#include <iostream>
+#include <ctime>
+#include <windows.h>
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+#include <math.h>
+#pragma warning (disable:4996)
+using namespace std;
+
+struct ogrenci
+{
+	string ad, soyad;
+	int no, yas;
+
+};
+
+int main() {
+	ogrenci kisi[3];
+
+
+	for (int i = 1; i < 3; i++)
+	{
+		cout << i << ".isminizi giriniz\n--> ";
+		cin >> kisi[i].ad;
+		cout << i << ".soyadinizi giriniz\n--> ";
+		cin >> kisi[i].soyad;
+		cout << i << ".Nosunu giriniz\n--> ";
+		cin >> kisi[i].no;
+		cout << i << ".yasinizi giriniz\n--> ";
+		cin >> kisi[i].yas;
+		cout << endl << endl;
+	}
+	for (int i = 1; i < 3; i++)
+	{
+		cout << kisi[i].ad << endl << kisi[i].soyad << endl << kisi[i].no << endl << kisi[i].yas;
+		cout << endl << endl;
+	}
+
+
+
+	return 0;
+}
